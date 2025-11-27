@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет-магазин</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 Магазин</div>
+    <nav>
+        <a onclick="showPage('home')">Главная</a>
+        <a onclick="showPage('about')">О компании</a>
+        <a onclick="showPage('login')">Авторизация</a>
+    </nav>
+</header>
+
+<!-- Главная -->
+<section id="home" class="page">
+    <h1>Наши товары</h1>
+
+    <div class="products-wrap">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Товар+1" alt="https://via.placeholder.com/300x200?text=Товар+1
+">
+            <h3>Товар 1</h3>
+            <p>Описание товара.</p>
+            <button>Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product2.jpg" alt="">
+            <h3>Товар 2</h3>
+            <p>Описание товара.</p>
+            <button>Купить</button>
+        </div>
+
+        <div class="product">
+            <img src="img/product3.jpg" alt="">
+            <h3>Товар 3</h3>
+            <p>Описание товара.</p>
+            <button>Купить</button>
+        </div>
+    </div>
+</section>
+
+<!-- О компании -->
+<section id="about" class="page hidden">
+    <h1>О компании</h1>
+    <p>
+        Мы — современная компания, специализирующаяся на продаже качественных товаров.
+        Предоставляем лучшую цену и сервис для наших клиентов.
+    </p>
+</section>
+
+<!-- Авторизация -->
+<section id="login" class="page hidden">
+    <h1>Авторизация</h1>
+    <div class="login-box">
+        <input type="text" id="loginUser" placeholder="Логин">
+        <input type="password" id="loginPass" placeholder="Пароль">
+        <button onclick="login()">Войти</button>
+        <p id="loginMsg"></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Интернет-магазин. Все права защищены.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
